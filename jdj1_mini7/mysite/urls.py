@@ -24,7 +24,7 @@ def team(request):
     return render(request,'team.html')
 
 urlpatterns = [
-
+    path('',index),
     path('home/',index),
     path('admin/', admin.site.urls),
     path('chatgpt/',include('chatgpt.urls')),

@@ -28,10 +28,6 @@ def getChatResult(self, id):
 def index(request):
     return render(request, 'languagechat/index.html')
 
-def redirect_home(request):
-    # home/으로 리디렉션하는 로직을 작성하세요.
-    return redirect('home')
-
 def chat(request):
     if request.method == 'POST' and request.FILES['files']:
 

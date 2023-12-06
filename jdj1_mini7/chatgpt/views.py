@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="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")
 # Create your views here.
 
 
@@ -25,10 +25,6 @@ def imageGPT(prompt):
 
 def index(request):
     return render(request, 'gpt/index.html')
-
-def redirect_home(request):
-    # home/으로 리디렉션하는 로직을 작성하세요.
-    return redirect('home')
 
 def chat(request):
     #post로 받은 question
